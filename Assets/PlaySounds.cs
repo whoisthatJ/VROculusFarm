@@ -6,8 +6,9 @@ public class PlaySounds : MonoBehaviour
 {
     
     public AudioClip hello;
-    public AudioClip hand;
+    public AudioClip showhand;
     public AudioClip goodjob;
+    public AudioClip iamhere;
     AudioSource Farmer_audio;
 
     // Start is called before the first frame update
@@ -27,10 +28,14 @@ public class PlaySounds : MonoBehaviour
     }
     void handPlay()
     {
-        Farmer_audio.PlayOneShot(hand);
+        Farmer_audio.PlayOneShot(showhand);
     }
     void goodJobPlay()
     {
         Farmer_audio.PlayOneShot(goodjob);
+    }
+    void iamHerePlay()
+    {
+        Farmer_audio.PlayOneShot(iamhere);
     }
 }
