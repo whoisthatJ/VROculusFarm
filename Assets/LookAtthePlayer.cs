@@ -15,5 +15,6 @@ public class LookAtthePlayer : MonoBehaviour
     void Update()
     {
         transform.LookAt(player.transform);
+        transform.rotation = new Quaternion(0f, transform.rotation.y, 0f, transform.rotation.w);
     }
 }
