@@ -11,6 +11,7 @@ public class Boy_speak_script : MonoBehaviour
 
     public AudioClip lets_play;
     public AudioClip ready;
+    public AudioClip onemore;
     public AudioClip scissors_onemore;
     public AudioClip paper_onemore;
     public AudioClip rock;
@@ -98,5 +99,9 @@ public class Boy_speak_script : MonoBehaviour
     void i_win_play()
     {
         Boy_audio.PlayOneShot(i_win_audio);
+    }
+    void onemore_play()
+    {
+        Boy_audio.PlayOneShot(onemore);
     }
 }
