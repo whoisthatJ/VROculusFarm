@@ -8,7 +8,15 @@ public class Boy_speak_script : MonoBehaviour
     public AudioClip howOldAreYou;
     public AudioClip WhatIsYourName;
     public AudioClip willYouPlay;
-    public AudioClip LookAtCow;
+
+    public AudioClip lets_play;
+    public AudioClip ready;
+    public AudioClip scissors_onemore;
+    public AudioClip paper_onemore;
+    public AudioClip rock;
+    public AudioClip you_win;
+    public AudioClip i_win_audio;
+
     AudioSource Boy_audio;
     Animator boy_anim;
 
@@ -37,11 +45,12 @@ public class Boy_speak_script : MonoBehaviour
         {
             boy_anim.Play("Boy_willYouPlay");
         }
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            boy_anim.Play("Boy_lookAtCow");
-        }
       
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            boy_anim.Play("i_win");
+        }
+
     }
 
     void helloBoy()
@@ -60,8 +69,34 @@ public class Boy_speak_script : MonoBehaviour
     {
         Boy_audio.PlayOneShot(willYouPlay);
     }
-    void CowPlay()
+    void letsplay()
     {
-        Boy_audio.PlayOneShot(LookAtCow);
+        Boy_audio.PlayOneShot(lets_play);
+    }
+    void readyPlay()
+    {
+        Boy_audio.PlayOneShot(ready);
+    }
+
+    void scissors_play()
+    {
+        Boy_audio.PlayOneShot(scissors_onemore);
+    }
+    void paper_play()
+    {
+        Boy_audio.PlayOneShot(paper_onemore);
+    }
+    void rock_play()
+    {
+        Boy_audio.PlayOneShot(rock);
+    }
+
+    void you_win_play()
+    {
+        Boy_audio.PlayOneShot(you_win);
+    }
+    void i_win_play()
+    {
+        Boy_audio.PlayOneShot(i_win_audio);
     }
 }

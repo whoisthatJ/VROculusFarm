@@ -7,9 +7,14 @@ public class ScenarioController : MonoBehaviour
     [Tooltip("The button used to begin aiming for a teleport.")]
     public OVRInput.RawButton AimButton;
     public Animator farmer;
+    public Animator boy;
+
     public string [] animations = { "Hello", "Here", "Hand", "GJ"};
+    public string [] boy_animations = { "boy_Hello", "boy_Age", "boy_Name", "boy_Play", "lets_play", "ready", "scissors_onemore", "paper_onemore", "rock", "you_win" };
     public GameObject blackScreen;
     public int index = 0;
+
+    public int boy_index = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,11 +44,25 @@ public class ScenarioController : MonoBehaviour
 
         if (OVRInput.GetDown(OVRInput.Button.Three))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            // UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+            Debug.Log("Pressed...");
+            //DebugUIBuilder.instance.AddLabel("Pressed a button " + animations[index]);
+            boy_index++;
+            if (boy_index >= boy_animations.Length)
+                boy_index = 0;
         }
         if (OVRInput.GetDown(OVRInput.Button.Four))
         {
-            Application.Quit();
+            // Application.Quit();
+            boy.SetTrigger(boy_animations[boy_index]);
+        }
+
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick))
+        {
+            boy.SetTrigger("i_win");
+          // boy.Play("i_win");
+            // Application.Quit();
+           
         }
     }
 }
