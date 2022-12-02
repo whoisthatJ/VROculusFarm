@@ -10,7 +10,7 @@ public class VRRenderScale : MonoBehaviour
 
     void Start()
     {
-        XRSettings.eyeTextureResolutionScale = 1.5f;
+        XRSettings.eyeTextureResolutionScale = 1.2f;
     }
 
 }
