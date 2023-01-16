@@ -10,11 +10,14 @@ public class ScenarioController : MonoBehaviour
     public Animator boy;
 
     public string [] animations = { "Hello", "Here", "Hand", "GJ"};
-    public string [] boy_animations = { "boy_Hello", "boy_Age", "boy_Name", "boy_Play", "lets_play", "ready", "scissors_onemore", "paper_onemore", "rock", "you_win" };
+   // public string [] boy_animations = { "boy_Hello", "boy_Age", "boy_Name", "boy_Play", "lets_play", "ready", "scissors_onemore", "paper_onemore", "rock", "you_win" };
+
+    public string[] Real_boy_animations = { "1_hello", "2_tell_me_about_yourself", "3_dog_task", "4_dog_like", "5_apple_task",
+    "6_apple_count", "8_good_job", "9_chicken", "10_amazing", "11_good_bye"};
     public GameObject blackScreen;
     public int index = 0;
 
-    public int boy_index = 0;
+    public int real_boy_index = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,22 +50,22 @@ public class ScenarioController : MonoBehaviour
             // UnityEngine.SceneManagement.SceneManager.LoadScene(0);
             Debug.Log("Pressed...");
             //DebugUIBuilder.instance.AddLabel("Pressed a button " + animations[index]);
-            boy_index++;
-            if (boy_index >= boy_animations.Length)
-                boy_index = 0;
+            real_boy_index++;
+            if (real_boy_index >= Real_boy_animations.Length)
+                real_boy_index = 0;
         }
         if (OVRInput.GetDown(OVRInput.Button.Four))
         {
             // Application.Quit();
-            boy.SetTrigger(boy_animations[boy_index]);
+            boy.SetTrigger(Real_boy_animations[real_boy_index]);
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick))
-        {
-            boy.SetTrigger("i_win");
+       // if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick))
+       // {
+          //  boy.SetTrigger("i_win");
           // boy.Play("i_win");
             // Application.Quit();
            
-        }
+       // }
     }
 }
