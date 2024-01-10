@@ -12,8 +12,12 @@ public class ScenarioController : MonoBehaviour
     public string [] animations = { "Hello", "Here", "Hand", "GJ"};
    // public string [] boy_animations = { "boy_Hello", "boy_Age", "boy_Name", "boy_Play", "lets_play", "ready", "scissors_onemore", "paper_onemore", "rock", "you_win" };
 
-    public string[] Real_boy_animations = { "1_hello", "2_tell_me_about_yourself", "3_dog_task", "4_dog_like", "5_apple_task",
-    "6_apple_count", "8_good_job", "9_chicken", "10_amazing", "11_good_bye"};
+    //public string[] Real_boy_animations = { "1_hello", "2_tell_me_about_yourself", "3_dog_task", "4_dog_like", "5_apple_task",
+    //"6_apple_count", "8_good_job", "9_chicken", "10_amazing", "11_good_bye"};
+
+    public string[] Real_boy_animations = { "hello", "about_yourself", "dog_task", "dog_like", "apple_task",
+    "apple_count", "good_job", "chicken", "amazing", "good_bye"};
+
     public GameObject blackScreen;
     public int index = 0;
 

@@ -381,61 +381,61 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: about_yourself
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: dog_task
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: dog_like
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: apple_task
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: apple_count
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: good_job
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: chicken
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: amazing
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: good_bye
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -579,19 +579,19 @@ AnimatorStateMachine:
     m_Position: {x: 480, y: 340, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1370807396937587083}
-    m_Position: {x: 470, y: 400, z: 0}
+    m_Position: {x: 480, y: 400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2722857218278552862}
-    m_Position: {x: 470, y: 460, z: 0}
+    m_Position: {x: 460, y: 460, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1667662443573393799}
-    m_Position: {x: 460, y: 510, z: 0}
+    m_Position: {x: 370, y: 540, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3718250588738337000}
-    m_Position: {x: 450, y: 570, z: 0}
+    m_Position: {x: 360, y: 600, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4542185938504812745}
-    m_Position: {x: 420, y: 630, z: 0}
+    m_Position: {x: 330, y: 660, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

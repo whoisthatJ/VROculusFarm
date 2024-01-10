@@ -8089,6 +8089,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768163023}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &768392944 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2003200045283776115, guid: 01c1664d1aa26364b822d0c8c1865d91, type: 3}
+  m_PrefabInstance: {fileID: 2003200045139223168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &818659478 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114956354361317420, guid: 6fae51a9f4170334e8639e8dbfc0a54b, type: 3}
@@ -10034,11 +10039,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4515048727945810, guid: ea7023a21c9958f439273c740ffccda8, type: 3}
   m_PrefabInstance: {fileID: 1509222914}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1534538806 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1534538806, guid: 01c1664d1aa26364b822d0c8c1865d91, type: 3}
-  m_PrefabInstance: {fileID: 2003200045139223168}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1542300442
 GameObject:
@@ -17962,23 +17962,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AimButton: 0
   farmer: {fileID: 1184405555}
-  boy: {fileID: 1534538806}
+  boy: {fileID: 768392944}
   animations:
   - Hello
   - Here
   - Hand
   - GJ
   Real_boy_animations:
-  - 1_hello
-  - 2_tell_me_about_yourself
-  - 3_dog_task
-  - 4_dog_like
-  - 5_apple_task
-  - 6_apple_count
-  - 8_good_job
-  - 9_chicken
-  - 10_amazing
-  - 11_good_bye
+  - hello
+  - about_yourself
+  - dog_task
+  - dog_like
+  - apple_task
+  - apple_count
+  - good_job
+  - chicken
+  - amazing
+  - good_bye
   blackScreen: {fileID: 0}
   index: 0
   real_boy_index: 0
