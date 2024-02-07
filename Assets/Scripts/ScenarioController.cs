@@ -18,6 +18,9 @@ public class ScenarioController : MonoBehaviour
     public string[] Real_boy_animations = { "hello", "about_yourself", "dog_task", "dog_like", "apple_task",
     "apple_count", "good_job", "chicken", "amazing", "good_bye"};
 
+    public string[] Real_boy_SCENARIO_2 = { "hello", "name", "old", "aidos", "howareyou",
+    "nastroy", "like_animals", "animals_see", "who_walk", "correct", "see_horse", "come_closer", "like_horse", "good_bye"};
+
     public GameObject blackScreen;
     public int index = 0;
 
@@ -55,13 +58,13 @@ public class ScenarioController : MonoBehaviour
             Debug.Log("Pressed...");
             //DebugUIBuilder.instance.AddLabel("Pressed a button " + animations[index]);
             real_boy_index++;
-            if (real_boy_index >= Real_boy_animations.Length)
+            if (real_boy_index >= Real_boy_SCENARIO_2.Length)
                 real_boy_index = 0;
         }
         if (OVRInput.GetDown(OVRInput.Button.Four))
         {
             // Application.Quit();
-            boy.SetTrigger(Real_boy_animations[real_boy_index]);
+            boy.SetTrigger(Real_boy_SCENARIO_2[real_boy_index]);
         }
 
        // if (OVRInput.GetDown(OVRInput.Button.PrimaryThumbstick))
