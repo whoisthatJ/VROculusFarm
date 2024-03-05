@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2015257e91a60bc42a13a4edd07df6bc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - hello: {instanceID: 0}
+  - showhand: {instanceID: 0}
+  - goodjob: {fileID: 8300000, guid: c7de6a84f9977ee479aa7279ecc675a1, type: 3}
+  - iamhere: {fileID: 8300000, guid: d963deba63e1d0d4a87adfec525aeb86, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
