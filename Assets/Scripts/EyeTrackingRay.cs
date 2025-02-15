@@ -7,7 +7,7 @@ public class EyeTrackingRay : MonoBehaviour
     [SerializeField]
     private float rayWidth = 0.2f;
     [SerializeField]
-    private float rayDistance = 5f;
+    private float rayDistance = 50f;
     private LayerMask layerToInclude;
     private LineRenderer lineRenderer;
     [SerializeField] Transform base_point;
@@ -18,8 +18,8 @@ public class EyeTrackingRay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lineRenderer = GetComponent<LineRenderer>();    
-        SetUpRay();
+        //lineRenderer = GetComponent<LineRenderer>();    
+        //SetUpRay();
     }
 
     void SetUpRay() {
@@ -40,13 +40,13 @@ public class EyeTrackingRay : MonoBehaviour
         transform.position = base_point.transform.position;
         Vector3 raycastDirection = transform.TransformDirection(Vector3.forward) * rayDistance;
         if (Physics.Raycast(transform.position, raycastDirection, out hit)){//, Mathf.Infinity, layerToInclude)) {
-            lineRenderer.startColor = rayColorHover;
-            lineRenderer.endColor = rayColorHover;
+            //lineRenderer.startColor = rayColorHover;
+            //lineRenderer.endColor = rayColorHover;
 
         }
         else {
-            lineRenderer.startColor = rayColorDefault;
-            lineRenderer.endColor = rayColorDefault;
+            //lineRenderer.startColor = rayColorDefault;
+            //lineRenderer.endColor = rayColorDefault;
         }
     }
 }
