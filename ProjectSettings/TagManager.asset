@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Farmer
+  - Boy
+  - Chicken
+  - Dog
+  - Sheep
+  - Horse
+  - Cow
+  - Bike
+  - Food
+  - Tractor
   layers:
   - Default
   - TransparentFX

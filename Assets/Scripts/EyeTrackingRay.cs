@@ -15,6 +15,8 @@ public class EyeTrackingRay : MonoBehaviour
     private Color rayColorDefault = Color.yellow;
     [SerializeField]
     private Color rayColorHover = Color.red;
+    private GameObject currentFocus;
+    private float timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,14 +41,27 @@ public class EyeTrackingRay : MonoBehaviour
         RaycastHit hit;
         transform.position = base_point.transform.position;
         Vector3 raycastDirection = transform.TransformDirection(Vector3.forward) * rayDistance;
-        if (Physics.Raycast(transform.position, raycastDirection, out hit)){//, Mathf.Infinity, layerToInclude)) {
-            //lineRenderer.startColor = rayColorHover;
-            //lineRenderer.endColor = rayColorHover;
-
+        if (Physics.Raycast(transform.position, raycastDirection, out hit)){//, Mathf.Infinity, layerToInclude)) {            
+            if (currentFocus != hit.collider.gameObject) {
+                SendRequest();
+                currentFocus = hit.collider.gameObject;
+                timer = 0;
+            }
+            else {
+                timer += Time.fixedDeltaTime;
+            }
         }
         else {
-            //lineRenderer.startColor = rayColorDefault;
-            //lineRenderer.endColor = rayColorDefault;
+            if(currentFocus != null) {
+                SendRequest();
+                currentFocus = null;
+                timer = 0;
+            }
+        }
+    }
+    private void SendRequest() { 
+        if(currentFocus!=null && currentFocus.tag!= "Untagged") {
+            PostRequest.instance.SendRequest(currentFocus.tag, timer);
         }
     }
 }
